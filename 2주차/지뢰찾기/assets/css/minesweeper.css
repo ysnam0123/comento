@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url('../font/Digital-7.ttf') format('truetype');
+}
+
+body {
+  display: flex; /* Flexbox 사용 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+body h1 {
+  position: absolute;
+  top: 0%;
+  margin-top: 10px;
+}
+/* 전체 */
+.wrapper {
+  margin-top: 30px;
+  background-color: #bcd9e3;
+  width: 600px;
+  height: 700px;
+  border-radius: 10px;
+}
+/* 상단 바를 나타내는 container*/
+.container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+/* 여기서부터 그리드*/
+/* 숫자 부모 요소*/
+.minecount,
+.clock {
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  width: 90px;
+  height: 45px;
+  position: relative;
+  padding-top: 5px;
+  background-color: #f1f0e8;
+  border-radius: 10px;
+}
+
+.hundred,
+.ten,
+.one {
+  font-family: 'Digital-7', monospace;
+  font-size: 50px;
+  text-align: end;
+  padding: 0;
+}
+.backnumber,
+.realnumber {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 숫자를 가로로 배치 */
+}
+.backnumber {
+  color: #c8e0e8;
+}
+.realnumber {
+  color: #226a83;
+}
+/* 리셋 버튼 */
+.resetbutton {
+  width: 50px;
+  height: 50px;
+  background: url(../image/smile.png);
+  background-size: cover;
+  border-radius: 10px;
+}
+.resetbutton:active {
+  box-shadow: inset 1px 1px 1px black;
+}
+/* 지뢰판*/
+.content {
+  margin: 30px 0px 0px 70px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  width: 450px;
+  height: 450px;
+  background-color: #e5e1da;
+}
+.content > div {
+  border: 1px solid #e5e1da;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.content > div:hover {
+  box-shadow: inset 1px 1px 2px black;
+}
+
+.content > div:active {
+  box-shadow: inset 2px 2px 2px 2px black;
+}
