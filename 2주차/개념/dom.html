@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="planet">Earth</div>
+    <div class="space">Mars</div>
+  </body>
+  <script>
+    const planet = document.getElementById('planet');
+    const space = document.getElementsByClassName('space');
+    planet.textContent = "I'm in the Earth!";
+    space.innerHTML = '<strong>Bold Text</strong>';
+
+    // 새로운 속성 추가
+    planet.setAttribute('class', 'solarSystem');
+    console.log(planet);
+
+    // 속성 불러오기
+    console.log(planet.getAttribute('class'));
+
+    // 속성 제거
+    planet.removeAttribute('class');
+  </script>
+</html>

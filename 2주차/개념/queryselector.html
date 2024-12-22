@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+  </body>
+  <script>
+    const qbox = document.querySelector('.box');
+    console.log(qbox); // <div class="box">Box 1</div> 전부를 빼옴
+    console.log(qbox.textContent); //텍스트만 빼오기
+
+    const qboxs = document.querySelectorAll('.box');
+    qboxs.forEach((box) => {
+      console.log(box.textContent);
+    });
+
+    //forEach : 각각에 대해 함수를 실행시킴
+  </script>
+</html>

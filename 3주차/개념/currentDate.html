@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 실시간 시간이 표시될 위치 -->
+    <div id="clock"></div>
+
+    <script>
+      // 시간을 업데이트하는 함수
+      function updateClock() {
+        const currentDate = new Date();
+
+        // 날짜와 시간을 문자열로 포맷팅
+        const formattedDate = `${currentDate.getFullYear()}-${String(
+          currentDate.getMonth() + 1
+        ).padStart(2, '0')}-${String(currentDate.getDate()).padStart(
+          2,
+          '0'
+        )} ${String(currentDate.getHours()).padStart(2, '0')}:${String(
+          currentDate.getMinutes()
+        ).padStart(2, '0')}:${String(currentDate.getSeconds()).padStart(
+          2,
+          '0'
+        )}`;
+
+        // clock 요소에 시간 표시
+        const clockElement = document.getElementById('clock');
+        clockElement.textContent = formattedDate; // 시간 업데이트
+      }
+
+      // 1초마다 updateClock 호출
+      setInterval(updateClock, 1000);
+
+      // 페이지 로드 시 즉시 시간 표시
+      updateClock();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="전송" id="submit" />
+    <input type="button" value="등록" id="register" />
+  </body>
+  <script>
+    const button = document.getElementById('submit');
+    button.addEventListener('click', function () {
+      alert('Button clicked!');
+    });
+
+    const regi = document.getElementById('register');
+    regi.onclick = function () {
+      alert('register finished');
+    };
+  </script>
+</html>

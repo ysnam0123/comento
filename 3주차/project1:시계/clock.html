@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/clock.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="battery">배터리 : 100 %</div>
+      <div class="container">
+        <div id="clock" class="box"></div>
+        <div id="alarm" class="box">
+          <ol id="alarmList">
+            <p>알람</p>
+          </ol>
+        </div>
+      </div>
+      <div class="addalarm">
+        <div class="time-selector">
+          <p>알람 추가 :</p>
+
+          <label for="hour"></label>
+          <select id="hour" name="hour">
+            <option value="">시</option>
+          </select>
+
+          <label for="minute"></label>
+          <select id="minute" name="minute">
+            <option value="">분</option>
+          </select>
+
+          <input type="button" value="추가" class="addbutton" />
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/clock.js"></script>
+  </body>
+</html>
