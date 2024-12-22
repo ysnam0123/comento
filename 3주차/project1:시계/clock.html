@@ -10,32 +10,52 @@
   <body>
     <div class="wrapper">
       <div class="battery">배터리 : 100 %</div>
-      <div class="container">
-        <div id="clock" class="box"></div>
-        <div id="alarm" class="box">
-          <ol id="alarmList">
-            <p>알람</p>
-          </ol>
+      <div class="changetime">
+        <div class="england">
+          <button class="changetimebutton">
+            <img src="./assets/image/epl.png" class="buttonimage" />
+          </button>
+        </div>
+        <div class="germany">
+          <button class="changetimebutton">
+            <img src="./assets/image/bundesliga.png" class="buttonimage" />
+          </button>
+        </div>
+        <div class="spain">
+          <button class="changetimebutton">
+            <img src="./assets/image/laliga.png" class="buttonimage" />
+          </button>
         </div>
       </div>
-      <div class="addalarm">
-        <div class="time-selector">
-          <p>알람 추가 :</p>
+      <div class="container0">
+        <div class="container">
+          <div id="clock" class="box"></div>
+          <div id="alarm" class="box">
+            <ol id="alarmList">
+              <p>알람</p>
+            </ol>
+          </div>
+        </div>
+        <div class="addalarm">
+          <div class="time-selector">
+            <p>알람 추가 :</p>
 
-          <label for="hour"></label>
-          <select id="hour" name="hour">
-            <option value="">시</option>
-          </select>
+            <label for="hour"></label>
+            <select id="hour" name="hour">
+              <option value="" class="alarmselect">시</option>
+            </select>
 
-          <label for="minute"></label>
-          <select id="minute" name="minute">
-            <option value="">분</option>
-          </select>
+            <label for="minute"></label>
+            <select id="minute" name="minute">
+              <option value="" class="alarmselect">분</option>
+            </select>
 
-          <input type="button" value="추가" class="addbutton" />
+            <input type="button" value="추가" class="addbutton" />
+          </div>
         </div>
       </div>
     </div>
     <script src="./assets/js/clock.js"></script>
+    <script src="./assets/js/changeColor.js"></script>
   </body>
 </html>

@@ -22,6 +22,49 @@ body {
   font-weight: 400;
 }
 
+.container0 {
+  margin-top: 0px;
+  border: 3px #543a14 solid;
+  border-radius: 5px;
+  height: 600px;
+  padding: 0px 10px 10px 10px;
+}
+
+.changetime {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.changetimebutton {
+  all: unset; /* 기본 스타일 제거 */
+  display: inline-flex; /* 내부 콘텐츠 정렬 */
+  justify-content: center; /* 콘텐츠 중앙 정렬 */
+  align-items: center;
+  cursor: pointer; /* 마우스 커서 변경 */
+  margin-bottom: 0;
+  padding: 5px 10px 3px 10px;
+  border: 3px solid #543a14;
+  border-bottom: 0;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.5 ease;
+}
+.changetimebutton:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 2px 2px black;
+}
+.changetimebutton:active {
+  box-shadow: 1px 2px 2px inset black;
+}
+
+.buttonimage {
+  height: 50px;
+  width: 100px;
+  aspect-ratio: 3/2;
+  object-fit: contain; /* 크기 맞춤 */
+}
+
 .container {
   display: flex;
   margin-top: 30px;
@@ -55,6 +98,7 @@ body {
 
 .time-selector {
   margin-left: 10px;
+  margin-top: 10px;
   background: #f0bb78;
   padding: 20px;
   border-radius: 8px;
@@ -89,6 +133,7 @@ select:focus {
 .addalarm {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .addbutton {
