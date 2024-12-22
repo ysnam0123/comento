@@ -48,7 +48,8 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-// 시
+// 알람 추가
+// 시 선택
 const selectHour = document.getElementById('hour');
 for (let i = 0; i < 24; i++) {
   const option = document.createElement('option');
@@ -57,7 +58,7 @@ for (let i = 0; i < 24; i++) {
   selectHour.appendChild(option);
 }
 
-// 분
+// 분 선택
 const selectMinute = document.getElementById('minute');
 for (let i = 0; i < 60; i += 5) {
   const option = document.createElement('option');

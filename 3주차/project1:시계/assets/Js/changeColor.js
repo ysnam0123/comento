@@ -1,5 +1,10 @@
 const epl = document.querySelector('.england .changetimebutton');
 epl.onclick = function () {
+  /* 자신의 버튼만 색이 들어오도록 설정 */
+  epl.style.backgroundColor = 'white';
+  bundesliga.style.backgroundColor = '#fff0dc';
+  laliga.style.backgroundColor = '#fff0dc';
+
   /* 전체 배경 색 */
   const container0 = document.querySelector('.container0');
   container0.style.backgroundColor = 'white';
@@ -32,10 +37,15 @@ epl.onclick = function () {
 rgb(193,42,36) : 빨간색
 rgb(26,30,36) : 차콜색
 rgb(53,56,60) : 어두운 회색
-rgb (174,175,177) : 살짝 밝은 회색
+rgb(174,175,177) : 살짝 밝은 회색
 */
 const bundesliga = document.querySelector('.germany .changetimebutton');
 bundesliga.onclick = function () {
+  /* 자신의 버튼만 색이 들어오도록 설정 */
+  bundesliga.style.backgroundColor = 'rgb(174,175,177)';
+  epl.style.backgroundColor = '#fff0dc';
+  laliga.style.backgroundColor = '#fff0dc';
+
   /* 전체 배경 색 */
   const container0 = document.querySelector('.container0');
   container0.style.backgroundColor = 'rgb(53,56,60)';
@@ -72,6 +82,11 @@ rgb(247,247,247) : 살짝 밝은 회색
 */
 const laliga = document.querySelector('.spain .changetimebutton');
 laliga.onclick = function () {
+  /* 자신의 버튼만 색이 들어오도록 설정 */
+  laliga.style.backgroundColor = 'rgb(236,90,78)';
+  epl.style.backgroundColor = '#fff0dc';
+  bundesliga.style.backgroundColor = '#fff0dc';
+
   /* 전체 배경 색 */
   const container0 = document.querySelector('.container0');
   container0.style.backgroundColor = 'white';
