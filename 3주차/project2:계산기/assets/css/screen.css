@@ -1,0 +1,22 @@
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  place-items: center; /* 가로 및 세로 중앙 정렬 */
+  width: 70%;
+  height: 50px;
+  background-color: #d8d2c2;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 10px;
+  font-family: 'digital-7';
+  font-size: 70px;
+  position: relative;
+}
+.result {
+  position: absolute;
+}
+.backnumber {
+  color: #979286;
+  position: absolute;
+}

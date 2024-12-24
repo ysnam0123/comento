@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="clock"></div>
+  </body>
+  <script>
+    // 현재 시간
+    function updateClock() {
+      // 현재 로컬 시간 가져오기
+      const localDate = new Date();
+
+      // 영국 시간으로 변환
+      const ukDate = new Date(
+        localDate.toLocaleString('en-GB', { timeZone: 'Europe/London' })
+      );
+
+      // 형식화된 날짜와 시간
+      const formattedDate = `${ukDate.getFullYear()}-${String(
+        ukDate.getMonth() + 1
+      ).padStart(2, '0')}-${String(ukDate.getDate()).padStart(2, '0')} ${String(
+        ukDate.getHours()
+      ).padStart(2, '0')}:${String(ukDate.getMinutes()).padStart(
+        2,
+        '0'
+      )}:${String(ukDate.getSeconds()).padStart(2, '0')}`;
+
+      // 화면에 업데이트
+      const clockElement = document.getElementById('clock');
+      clockElement.textContent = formattedDate;
+    }
+
+    // 1초마다 updateClock 호출
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</html>
