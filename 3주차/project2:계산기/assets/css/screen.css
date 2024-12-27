@@ -13,10 +13,12 @@
   font-size: 70px;
   position: relative;
 }
+
 .result {
   position: absolute;
+  color: black;
 }
-.backnumber {
+/* .backnumber {
   color: #979286;
   position: absolute;
-}
+} */
