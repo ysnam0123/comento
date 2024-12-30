@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todolist</title>
+  </head>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/todolist.css" />
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>To-Do List</h1>
+      </header>
+      <div class="addTaskBox">
+        <label for="addTask" class="addTaskLabel">할 일 추가:</label>
+        <input
+          type="text"
+          placeholder="할 일을 입력하세요"
+          autofocus
+          id="addTask"
+        />
+        <button class="addTaskButton">추가</button>
+      </div>
+      <div class="Box">
+        <p>나의 할 일 :</p>
+        <div>
+          <ol id="taskList"></ol>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/JavaScript/todolist.js"></script>
+</html>

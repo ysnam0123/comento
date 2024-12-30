@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'titlefonts';
+  src: url(../fonts/BebasNeue.woff) format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+베이지 
+#F8EDE3
+빨강 
+#800000
+파랑
+rgb(79,171,209)
+팥죽 
+rgb(117,82,95)
+검정 
+rgb(43,42,47)
+노랑 
+rgb(210 184 63)
+*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 100%;
+  background-color: #f8ede3;
+  border-bottom: 2px #800000 solid;
+}
+h1 {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  padding: 10px;
+  padding-bottom: 0;
+  font-family: 'titlefonts', sans-serif;
+  color: #800000;
+}
+.wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 600px;
+  border: 2px solid black;
+  padding: 0px;
+}
+
+/* 할 일 추가 버튼*/
+
+.addTaskBox {
+  display: block;
+  align-items: center;
+  background-color: #f8ede3;
+  color: #800000;
+  font-weight: 600;
+  width: 100%;
+  padding: 25px 15px 10px 15px;
+  box-sizing: border-box; /* 패딩과 보더를 포함한 크기 계산 */
+  border-bottom: 2px #800000 dotted;
+}
+
+#addTask {
+  margin-left: 5px;
+  border: 0;
+  border-bottom: 1.5px solid #800000;
+  background-color: #f8ede3;
+  color: #800000;
+  font-size: 15px;
+}
+#addTask:focus {
+  outline: none;
+}
+#addTask::placeholder {
+  color: #413d3d;
+}
+.addTaskButton {
+  background-color: #800000;
+  color: white;
+  border: 0;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+/* 할 일 박스 */
+.Box {
+  width: 100%;
+  height: 500px;
+  background-color: #f8ede3;
+  padding: 20px;
+  box-sizing: border-box; /* 패딩과 보더를 포함한 크기 계산 */
+  overflow: scroll; /* 넘치면 스크롤 */
+}
+.Box p {
+  display: inline;
+  background-color: #800000;
+  padding: 5px 8px;
+  color: white;
+  border-radius: 5px;
+}
+#taskList {
+  margin-top: 30px;
+  padding: 0px 30px 0px 30px;
+}
+#taskList li {
+  color: #800000;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-bottom: 1px solid #800000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.deleteButton {
+  border: 2px solid;
+  border-left: none;
+  padding: 3.3px 6px;
+  color: #8d493a;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.check {
+  margin-left: auto;
+  border: 2px solid;
+  padding: 3px 6px;
+  color: #8d493a;
+  font-weight: 900;
+  cursor: pointer;
+}
