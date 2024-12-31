@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="./assets/css/createaccount.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Create your Account</h1>
+      </header>
+      <div class="container">
+        <div class="box">
+          <label for="id" class="id">id</label>
+          <input type="text" id="id" />
+          <button class="check">확인</button>
+          <span class="checkAlert"></span>
+        </div>
+        <div class="box">
+          <label for="password" class="password">password</label>
+          <input type="password" id="password" />
+          <span class="passwordMessage"></span>
+        </div>
+        <div class="box">
+          <label for="email" class="email">email</label>
+          <input type="email" id="email" />
+          <button class="check" id="checkEmail">인증</button>
+          <div class="verifyEmail"></div>
+        </div>
+      </div>
+      <div>
+        <button class="finishButton">Create Account</button>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/JavaScript/createaccount.js"></script>
+</html>
